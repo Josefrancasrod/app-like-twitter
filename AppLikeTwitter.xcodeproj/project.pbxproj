@@ -10,9 +10,9 @@
 		8C4A5E7673045C6AB97DB926 /* Pods_AppLikeTwitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2F9A83AC035B112CBCA41D /* Pods_AppLikeTwitter.framework */; };
 		BC97B032271E653100826F81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC97B031271E653100826F81 /* AppDelegate.swift */; };
 		BC97B036271E653100826F81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC97B035271E653100826F81 /* ViewController.swift */; };
-		BC97B039271E653100826F81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC97B037271E653100826F81 /* Main.storyboard */; };
 		BC97B03B271E653200826F81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC97B03A271E653200826F81 /* Assets.xcassets */; };
 		BC97B03E271E653200826F81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC97B03C271E653200826F81 /* LaunchScreen.storyboard */; };
+		BC97B049271FB8A800826F81 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC97B048271FB8A800826F81 /* Welcome.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		BC97B02E271E653100826F81 /* AppLikeTwitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppLikeTwitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC97B031271E653100826F81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC97B035271E653100826F81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BC97B038271E653100826F81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC97B03A271E653200826F81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC97B03D271E653200826F81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC97B03F271E653200826F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC97B048271FB8A800826F81 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		C9C534E2324B57B02BFB3A5D /* Pods-AppLikeTwitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppLikeTwitter.debug.xcconfig"; path = "Target Support Files/Pods-AppLikeTwitter/Pods-AppLikeTwitter.debug.xcconfig"; sourceTree = "<group>"; };
 		D23417C610E8524A7DED044D /* Pods-AppLikeTwitter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppLikeTwitter.release.xcconfig"; path = "Target Support Files/Pods-AppLikeTwitter/Pods-AppLikeTwitter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,14 +70,38 @@
 		BC97B030271E653100826F81 /* AppLikeTwitter */ = {
 			isa = PBXGroup;
 			children = (
-				BC97B031271E653100826F81 /* AppDelegate.swift */,
-				BC97B035271E653100826F81 /* ViewController.swift */,
-				BC97B037271E653100826F81 /* Main.storyboard */,
-				BC97B03A271E653200826F81 /* Assets.xcassets */,
-				BC97B03C271E653200826F81 /* LaunchScreen.storyboard */,
+				BC97B046271FB83F00826F81 /* Commons */,
+				BC97B045271FB83200826F81 /* Modules */,
 				BC97B03F271E653200826F81 /* Info.plist */,
 			);
 			path = AppLikeTwitter;
+			sourceTree = "<group>";
+		};
+		BC97B045271FB83200826F81 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BC97B047271FB88100826F81 /* Welcome */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BC97B046271FB83F00826F81 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				BC97B031271E653100826F81 /* AppDelegate.swift */,
+				BC97B035271E653100826F81 /* ViewController.swift */,
+				BC97B03A271E653200826F81 /* Assets.xcassets */,
+				BC97B03C271E653200826F81 /* LaunchScreen.storyboard */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		BC97B047271FB88100826F81 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				BC97B048271FB8A800826F81 /* Welcome.storyboard */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 		E61F0E97A6E9611872816DB9 /* Frameworks */ = {
@@ -150,7 +174,7 @@
 			files = (
 				BC97B03E271E653200826F81 /* LaunchScreen.storyboard in Resources */,
 				BC97B03B271E653200826F81 /* Assets.xcassets in Resources */,
-				BC97B039271E653100826F81 /* Main.storyboard in Resources */,
+				BC97B049271FB8A800826F81 /* Welcome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,14 +235,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BC97B037271E653100826F81 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC97B038271E653100826F81 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BC97B03C271E653200826F81 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -362,7 +378,7 @@
 				INFOPLIST_FILE = AppLikeTwitter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Welcome;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -394,7 +410,7 @@
 				INFOPLIST_FILE = AppLikeTwitter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Welcome;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
