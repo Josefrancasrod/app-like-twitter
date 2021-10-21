@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="WelcomeViewController" customModule="AppLikeTwitter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,6 +90,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5zK-ak-AYd"/>
+                    <connections>
+                        <outlet property="loginButton" destination="0Xw-yx-sxF" id="3b5-By-Pbe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -98,7 +101,7 @@
         <!--Crear una cuenta-->
         <scene sceneID="mT9-UN-NdC">
             <objects>
-                <viewController id="gmi-Qp-2is" sceneMemberID="viewController">
+                <viewController id="gmi-Qp-2is" customClass="RegisterViewController" customModule="AppLikeTwitter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kNV-M8-SIr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -159,6 +162,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Crear una cuenta" id="kc0-dc-Yom"/>
+                    <connections>
+                        <outlet property="registerButton" destination="gJ1-q0-HUk" id="GTN-RG-wE9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wyb-Ma-Cjd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -167,7 +173,7 @@
         <!--Iniciar sesión-->
         <scene sceneID="eho-4K-82R">
             <objects>
-                <viewController id="r5s-5j-EQB" sceneMemberID="viewController">
+                <viewController id="r5s-5j-EQB" customClass="LoginViewController" customModule="AppLikeTwitter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mH7-jt-RNK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -196,6 +202,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Iniciar Sesión">
                                             <color key="baseForegroundColor" systemColor="tintColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="loginButtonAction" destination="r5s-5j-EQB" eventType="touchUpInside" id="CCW-RU-Yeu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -215,6 +224,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Iniciar sesión" id="zLV-je-68d"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="cnm-Jo-zSp" id="dKc-21-1S3"/>
+                        <outlet property="loginButton" destination="61a-aK-rPD" id="kZw-0a-J5q"/>
+                        <outlet property="passwordTextField" destination="Os2-tX-ZYu" id="K2a-IW-M0k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c7F-7b-YtC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
