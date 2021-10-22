@@ -16,6 +16,7 @@
 		BC97B04B272117B300826F81 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC97B04A272117B300826F81 /* WelcomeViewController.swift */; };
 		BC97B04D272117CB00826F81 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC97B04C272117CB00826F81 /* LoginViewController.swift */; };
 		BC97B04F272117D800826F81 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC97B04E272117D800826F81 /* RegisterViewController.swift */; };
+		BC97B0522722715100826F81 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC97B0512722715100826F81 /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BC97B04A272117B300826F81 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		BC97B04C272117CB00826F81 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BC97B04E272117D800826F81 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		BC97B0512722715100826F81 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C9C534E2324B57B02BFB3A5D /* Pods-AppLikeTwitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppLikeTwitter.debug.xcconfig"; path = "Target Support Files/Pods-AppLikeTwitter/Pods-AppLikeTwitter.debug.xcconfig"; sourceTree = "<group>"; };
 		D23417C610E8524A7DED044D /* Pods-AppLikeTwitter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppLikeTwitter.release.xcconfig"; path = "Target Support Files/Pods-AppLikeTwitter/Pods-AppLikeTwitter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +88,7 @@
 		BC97B045271FB83200826F81 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				BC97B0502722713900826F81 /* Home */,
 				BC97B047271FB88100826F81 /* Welcome */,
 			);
 			path = Modules;
@@ -111,6 +114,14 @@
 				BC97B04E272117D800826F81 /* RegisterViewController.swift */,
 			);
 			path = Welcome;
+			sourceTree = "<group>";
+		};
+		BC97B0502722713900826F81 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BC97B0512722715100826F81 /* Home.storyboard */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		E61F0E97A6E9611872816DB9 /* Frameworks */ = {
@@ -184,6 +195,7 @@
 				BC97B03E271E653200826F81 /* LaunchScreen.storyboard in Resources */,
 				BC97B03B271E653200826F81 /* Assets.xcassets in Resources */,
 				BC97B049271FB8A800826F81 /* Welcome.storyboard in Resources */,
+				BC97B0522722715100826F81 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

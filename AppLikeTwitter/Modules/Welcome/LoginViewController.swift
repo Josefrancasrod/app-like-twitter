@@ -18,6 +18,7 @@ class LoginViewController: UIViewController {
     //MARK: - IBActions
     
     @IBAction func loginButtonAction(){
+        view.endEditing(true)
         performLogin()
     }
 
@@ -48,6 +49,8 @@ class LoginViewController: UIViewController {
         if !password.isEmpty && !email.isEmpty  {
             NotificationBanner(title: "Success", subtitle: "Entrada de datos valida", style: .success).show()
         }
+        
+        performSegue(withIdentifier: "showHome", sender: nil)
     }
 
     /*
