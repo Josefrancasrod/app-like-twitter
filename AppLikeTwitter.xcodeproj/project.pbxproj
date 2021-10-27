@@ -13,6 +13,10 @@
 		BC52CB0D2727C105008254F9 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC52CB0C2727C105008254F9 /* LoginResponse.swift */; };
 		BC52CB0F2727C137008254F9 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC52CB0E2727C137008254F9 /* ErrorResponse.swift */; };
 		BC52CB112727C159008254F9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC52CB102727C159008254F9 /* User.swift */; };
+		BC52CB132728E6E5008254F9 /* Tweets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC52CB122728E6E5008254F9 /* Tweets.swift */; };
+		BC52CB152728E899008254F9 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC52CB142728E899008254F9 /* Location.swift */; };
+		BC52CB172728E958008254F9 /* DeleteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC52CB162728E958008254F9 /* DeleteResponse.swift */; };
+		BC52CB192728E9C0008254F9 /* TweetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC52CB182728E9C0008254F9 /* TweetRequest.swift */; };
 		BC97B032271E653100826F81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC97B031271E653100826F81 /* AppDelegate.swift */; };
 		BC97B036271E653100826F81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC97B035271E653100826F81 /* ViewController.swift */; };
 		BC97B03B271E653200826F81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC97B03A271E653200826F81 /* Assets.xcassets */; };
@@ -31,6 +35,10 @@
 		BC52CB0C2727C105008254F9 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		BC52CB0E2727C137008254F9 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		BC52CB102727C159008254F9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BC52CB122728E6E5008254F9 /* Tweets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweets.swift; sourceTree = "<group>"; };
+		BC52CB142728E899008254F9 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		BC52CB162728E958008254F9 /* DeleteResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteResponse.swift; sourceTree = "<group>"; };
+		BC52CB182728E9C0008254F9 /* TweetRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetRequest.swift; sourceTree = "<group>"; };
 		BC97B02E271E653100826F81 /* AppLikeTwitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppLikeTwitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC97B031271E653100826F81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC97B035271E653100826F81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +83,10 @@
 				BC52CB0C2727C105008254F9 /* LoginResponse.swift */,
 				BC52CB0E2727C137008254F9 /* ErrorResponse.swift */,
 				BC52CB102727C159008254F9 /* User.swift */,
+				BC52CB122728E6E5008254F9 /* Tweets.swift */,
+				BC52CB142728E899008254F9 /* Location.swift */,
+				BC52CB162728E958008254F9 /* DeleteResponse.swift */,
+				BC52CB182728E9C0008254F9 /* TweetRequest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -276,10 +288,14 @@
 				BC97B04B272117B300826F81 /* WelcomeViewController.swift in Sources */,
 				BC97B036271E653100826F81 /* ViewController.swift in Sources */,
 				BC52CB082727C07A008254F9 /* Endpoints.swift in Sources */,
+				BC52CB172728E958008254F9 /* DeleteResponse.swift in Sources */,
 				BC52CB0B2727C0C0008254F9 /* LoginRequest.swift in Sources */,
+				BC52CB132728E6E5008254F9 /* Tweets.swift in Sources */,
 				BC52CB0F2727C137008254F9 /* ErrorResponse.swift in Sources */,
 				BC52CB0D2727C105008254F9 /* LoginResponse.swift in Sources */,
 				BC52CB112727C159008254F9 /* User.swift in Sources */,
+				BC52CB192728E9C0008254F9 /* TweetRequest.swift in Sources */,
+				BC52CB152728E899008254F9 /* Location.swift in Sources */,
 				BC97B032271E653100826F81 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
