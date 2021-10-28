@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TweetRequest{
+struct TweetRequest: Codable{
     let text: String
     let imageUrl: String
     let videoUrl: String

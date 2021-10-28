@@ -7,6 +7,8 @@
 
 import UIKit
 import NotificationBannerSwift
+import Simple_Networking
+import SVProgressHUD
 
 class LoginViewController: UIViewController {
     
@@ -47,10 +49,39 @@ class LoginViewController: UIViewController {
         }
         
         if !password.isEmpty && !email.isEmpty  {
-            NotificationBanner(title: "Success", subtitle: "Entrada de datos valida", style: .success).show()
+            //NotificationBanner(title: "Success", subtitle: "Entrada de datos valida", style: .success).show()
         }
         
-        performSegue(withIdentifier: "showHome", sender: nil)
+        //Crear request
+        let request = LoginRequest(email: email, password: password)
+        
+        //Iniciamos la carga
+        SVProgressHUD.show()
+        
+        //Llamar a libreria
+        SN.post(endpoint: Endpoints.login, model: request) { (response: SNResultWithEntity<LoginResponse, ErrorResponse>) in
+            SVProgressHUD.dismiss()
+            
+            switch response {
+            case .success(let response):
+                //Todo lo bueno
+                NotificationBanner(subtitle: "Bienvendio \(response.user.names)", style: .success).show()
+                self.performSegue(withIdentifier: "showHome", sender: nil)
+                
+            case .error(let error):
+                NotificationBanner(title: "Error",subtitle: "\(error.localizedDescription)", style: .danger).show()
+                return
+                
+                //Todo lo malo
+            case .errorResult(let entity):
+                NotificationBanner(title: "Error",subtitle: "\(entity.error.description)", style: .danger).show()
+                return
+                //error pero no tan malo
+            }
+        }
+        
+        
+        //
     }
 
     /*
