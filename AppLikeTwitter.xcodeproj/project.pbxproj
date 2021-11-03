@@ -27,7 +27,9 @@
 		BC97B04F272117D800826F81 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC97B04E272117D800826F81 /* RegisterViewController.swift */; };
 		BC97B0522722715100826F81 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC97B0512722715100826F81 /* Home.storyboard */; };
 		BCD49476272B902300631834 /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD49475272B902300631834 /* RegisterRequest.swift */; };
-		BCD4947A272D047C00631834 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD49479272D047C00631834 /* HomeViewController.swift */; };
+		BCD4947C2732552500631834 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4947B2732552500631834 /* HomeViewController.swift */; };
+		BCD494802732562900631834 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4947E2732562900631834 /* TweetTableViewCell.swift */; };
+		BCD494812732562900631834 /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCD4947F2732562900631834 /* TweetTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +55,9 @@
 		BC97B04E272117D800826F81 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		BC97B0512722715100826F81 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		BCD49475272B902300631834 /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
-		BCD49479272D047C00631834 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BCD4947B2732552500631834 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BCD4947E2732562900631834 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
+		BCD4947F2732562900631834 /* TweetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
 		C9C534E2324B57B02BFB3A5D /* Pods-AppLikeTwitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppLikeTwitter.debug.xcconfig"; path = "Target Support Files/Pods-AppLikeTwitter/Pods-AppLikeTwitter.debug.xcconfig"; sourceTree = "<group>"; };
 		D23417C610E8524A7DED044D /* Pods-AppLikeTwitter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppLikeTwitter.release.xcconfig"; path = "Target Support Files/Pods-AppLikeTwitter/Pods-AppLikeTwitter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,10 +163,20 @@
 		BC97B0502722713900826F81 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				BCD4947D273255FD00631834 /* Cells */,
 				BC97B0512722715100826F81 /* Home.storyboard */,
-				BCD49479272D047C00631834 /* HomeViewController.swift */,
+				BCD4947B2732552500631834 /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		BCD4947D273255FD00631834 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BCD4947E2732562900631834 /* TweetTableViewCell.swift */,
+				BCD4947F2732562900631834 /* TweetTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		E61F0E97A6E9611872816DB9 /* Frameworks */ = {
@@ -233,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD494812732562900631834 /* TweetTableViewCell.xib in Resources */,
 				BC97B03E271E653200826F81 /* LaunchScreen.storyboard in Resources */,
 				BC97B03B271E653200826F81 /* Assets.xcassets in Resources */,
 				BC97B049271FB8A800826F81 /* Welcome.storyboard in Resources */,
@@ -290,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC97B04D272117CB00826F81 /* LoginViewController.swift in Sources */,
+				BCD494802732562900631834 /* TweetTableViewCell.swift in Sources */,
 				BC97B04F272117D800826F81 /* RegisterViewController.swift in Sources */,
 				BCD49476272B902300631834 /* RegisterRequest.swift in Sources */,
 				BC97B04B272117B300826F81 /* WelcomeViewController.swift in Sources */,
@@ -300,7 +316,7 @@
 				BC52CB132728E6E5008254F9 /* Tweets.swift in Sources */,
 				BC52CB0F2727C137008254F9 /* ErrorResponse.swift in Sources */,
 				BC52CB0D2727C105008254F9 /* LoginResponse.swift in Sources */,
-				BCD4947A272D047C00631834 /* HomeViewController.swift in Sources */,
+				BCD4947C2732552500631834 /* HomeViewController.swift in Sources */,
 				BC52CB112727C159008254F9 /* User.swift in Sources */,
 				BC52CB192728E9C0008254F9 /* TweetRequest.swift in Sources */,
 				BC52CB152728E899008254F9 /* Location.swift in Sources */,
