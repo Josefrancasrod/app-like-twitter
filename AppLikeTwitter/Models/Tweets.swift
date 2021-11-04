@@ -19,8 +19,8 @@ struct Tweet: Codable {
     let text: String
     let videoUrl: String
     let location: Location
-    let hasVide: Bool
+    let hasVideo: Bool
     let hasImage: Bool
     let hasLocation: Bool
-    let cratedAt: String
+    let createdAt: String
 }

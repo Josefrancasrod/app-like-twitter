@@ -67,6 +67,7 @@ class LoginViewController: UIViewController {
                 //Todo lo bueno
                 NotificationBanner(subtitle: "Bienvendio \(response.user.names)", style: .success).show()
                 self.performSegue(withIdentifier: "showHome", sender: nil)
+                SimpleNetworking.setAuthenticationHeader(prefix: "", token: response.token)
                 
             case .error(let error):
                 NotificationBanner(title: "Error",subtitle: "\(error.localizedDescription)", style: .danger).show()

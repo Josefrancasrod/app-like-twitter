@@ -58,6 +58,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="Tef-ee-pZJ" firstAttribute="leading" secondItem="kkr-Rb-a8m" secondAttribute="leading" id="0id-sf-YTT"/>
+                            <constraint firstAttribute="trailing" secondItem="haz-Na-Xpd" secondAttribute="trailing" id="2BV-E7-p93"/>
+                            <constraint firstAttribute="trailing" secondItem="Tef-ee-pZJ" secondAttribute="trailing" id="WTF-X0-16H"/>
+                            <constraint firstItem="haz-Na-Xpd" firstAttribute="leading" secondItem="kkr-Rb-a8m" secondAttribute="leading" id="vfA-8a-s4F"/>
+                        </constraints>
                     </stackView>
                 </subviews>
                 <constraints>
