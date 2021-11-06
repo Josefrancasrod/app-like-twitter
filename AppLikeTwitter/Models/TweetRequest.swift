@@ -8,8 +8,8 @@
 import Foundation
 
 struct TweetRequest: Codable{
-    let text: String
-    let imageUrl: String
-    let videoUrl: String
-    let location: Location
+    let text: String!
+    let imageUrl: String!
+    let videoUrl: String!
+    let location: Location!
 }

@@ -6,13 +6,16 @@
 //
 
 import UIKit
+import Simple_Networking
+import SVProgressHUD
+import NotificationBannerSwift
 
 class AddPostViewController: UIViewController {
     
     @IBOutlet weak var postTextView: UITextView!
     
     @IBAction func addPostAction(){
-        
+        savePost()
     }
     
     @IBAction func dismissAction(){
@@ -25,15 +28,27 @@ class AddPostViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func savePost(){
+        let request = TweetRequest(text: postTextView.text, imageUrl: nil, videoUrl: nil, location: nil)
+        
+        SVProgressHUD.show()
+        SN.post(endpoint: Endpoints.posts, model: request) { (response: SNResultWithEntity<Tweet, ErrorResponse>) in
+            SVProgressHUD.dismiss()
+            switch response {
+            case .success:
+                //Todo lo buen
+                self.dismiss(animated: true, completion: nil)
+            case .error(let error):
+                NotificationBanner(title: "Error",subtitle: "\(error.localizedDescription)", style: .danger).show()
+                return
+                
+                //Todo lo malo
+            case .errorResult(let entity):
+                NotificationBanner(title: "Error",subtitle: "\(entity.error.description)", style: .danger).show()
+                return
+                //error pero no tan malo
+            }
+        }
     }
-    */
 
 }
